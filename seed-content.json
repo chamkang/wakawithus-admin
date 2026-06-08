@@ -465,7 +465,8 @@
       "review": "Absolutely breathtaking! WakaWithUS made every detail seamless — from the transport to the beachside dinners. Kribi is magical and this team made it even more so.",
       "date": "March 2026",
       "initials": "AN",
-      "location": "Yaoundé, Cameroon"
+      "location": "Yaoundé, Cameroon",
+      "image": "/images/photos/coast-kribi.jpg"
     },
     {
       "name": "Jean-Baptiste Fouda",
@@ -474,7 +475,8 @@
       "review": "As a Cameroonian living in France, this trip reconnected me with my roots in the most profound way. The cultural visits, the food, the people — I came back a different person.",
       "date": "February 2026",
       "initials": "JF",
-      "location": "Paris, France"
+      "location": "Paris, France",
+      "image": "/images/photos/highlands.jpg"
     },
     {
       "name": "Sophie Laurent",
@@ -483,7 +485,8 @@
       "review": "I've trekked in the Alps and the Himalayas, but something about Mount Cameroon was different. Raw, powerful, humbling. The WakaWithUS guides were exceptional.",
       "date": "January 2026",
       "initials": "SL",
-      "location": "Lyon, France"
+      "location": "Lyon, France",
+      "image": "/images/photos/mount-cameroon.jpg"
     },
     {
       "name": "Nsimba Patrice",
@@ -492,7 +495,8 @@
       "review": "Perfectly organised, no stress, just pure joy. Already booked my next trip!",
       "date": "December 2025",
       "initials": "NP",
-      "location": "Douala, Cameroon"
+      "location": "Douala, Cameroon",
+      "image": "/images/photos/culture-portrait.jpg"
     }
   ],
   "faq": [

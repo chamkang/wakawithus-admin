@@ -73,12 +73,31 @@ app.get("/api/session", (req, res) => res.json({ authed: isAuthed(req), mode: LI
 
 // ---- Supabase helpers ----
 function readSeed() {
-  // Used only to seed Supabase the very first time. Works locally (website file)
-  // and when deployed (bundled seed-content.json copy).
+  // Used to seed Supabase the first time AND to fill in any fields added to the
+  // schema later. Works locally (website file) and when deployed (bundled copy).
   for (const p of [CONTENT_FILE, path.join(__dirname, "seed-content.json")]) {
     try { return JSON.parse(fs.readFileSync(p, "utf8")); } catch (_) {}
   }
   return {};
+}
+
+// Fill in keys present in `seed` but missing in `data` (never overwrites real values).
+// Lets newly-added fields (e.g. a review image) appear even if the stored data is older.
+function withDefaults(seed, data) {
+  if (Array.isArray(seed)) {
+    if (!Array.isArray(data)) return data;
+    const template = seed[0];
+    return data.map((item, i) => withDefaults(seed[i] !== undefined ? seed[i] : template, item));
+  }
+  if (seed && typeof seed === "object") {
+    if (!data || typeof data !== "object") return data;
+    const out = { ...data };
+    for (const k of Object.keys(seed)) {
+      out[k] = k in out ? withDefaults(seed[k], out[k]) : seed[k];
+    }
+    return out;
+  }
+  return data;
 }
 async function sbGetContent() {
   const r = await fetch(`${SUPABASE_URL}/rest/v1/site_content?id=eq.1&select=data`, { headers: sbHeaders });
@@ -105,8 +124,9 @@ async function triggerDeploy() {
 // ---- content ----
 app.get("/api/content", requireAuth, async (req, res) => {
   try {
-    if (LIVE) return res.json(await sbGetContent());
-    res.type("application/json").send(fs.readFileSync(CONTENT_FILE, "utf8"));
+    if (LIVE) return res.json(withDefaults(readSeed(), await sbGetContent()));
+    const fileData = JSON.parse(fs.readFileSync(CONTENT_FILE, "utf8"));
+    res.json(withDefaults(readSeed(), fileData));
   } catch (e) { res.status(500).json({ error: e.message }); }
 });
 
