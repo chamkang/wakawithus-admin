@@ -38,8 +38,9 @@ app.use(express.json({ limit: "10mb" }));
 app.use(express.static(path.join(__dirname, "public")));
 app.use("/site", express.static(SITE_PUBLIC)); // preview local images
 
-// ---- auth ----
-const sessions = new Set();
+// ---- auth (stateless: token derived from the password, so it survives restarts
+//      and works across devices/instances — no in-memory session store) ----
+const AUTH_TOKEN = crypto.createHash("sha256").update("wakawithus-studio::" + PASSWORD).digest("hex");
 function parseCookies(req) {
   const out = {};
   (req.headers.cookie || "").split(";").forEach((c) => {
@@ -48,24 +49,21 @@ function parseCookies(req) {
   });
   return out;
 }
-function isAuthed(req) {
-  const { admin_session } = parseCookies(req);
-  return Boolean(admin_session && sessions.has(admin_session));
-}
+function isAuthed(req) { return parseCookies(req).admin_session === AUTH_TOKEN; }
 function requireAuth(req, res, next) { if (isAuthed(req)) return next(); res.status(401).json({ error: "Not authenticated" }); }
+function sessionCookie(req) {
+  const secure = String(req.headers["x-forwarded-proto"] || "").includes("https") ? "; Secure" : "";
+  return `admin_session=${AUTH_TOKEN}; HttpOnly; Path=/; Max-Age=2592000; SameSite=Lax${secure}`;
+}
 
 app.post("/api/login", (req, res) => {
   if ((req.body && req.body.password) === PASSWORD) {
-    const token = crypto.randomBytes(24).toString("hex");
-    sessions.add(token);
-    res.setHeader("Set-Cookie", `admin_session=${token}; HttpOnly; Path=/; Max-Age=86400; SameSite=Lax`);
+    res.setHeader("Set-Cookie", sessionCookie(req));
     return res.json({ ok: true, mode: LIVE ? "live" : "local" });
   }
   res.status(401).json({ error: "Wrong password" });
 });
 app.post("/api/logout", (req, res) => {
-  const { admin_session } = parseCookies(req);
-  sessions.delete(admin_session);
   res.setHeader("Set-Cookie", "admin_session=; Path=/; Max-Age=0");
   res.json({ ok: true });
 });
