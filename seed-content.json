@@ -1,0 +1,520 @@
+{
+  "global": {
+    "brandName": "WakaWithUs",
+    "motto": "Rediscover Cameroon, one Waka at a Time",
+    "whatsapp": "237675844288",
+    "phoneDisplay": "+237 675 844 288",
+    "email": "hello@wakawithus.com",
+    "location": "Buea, Cameroon",
+    "tiktok": "https://www.tiktok.com/@wakawithus",
+    "tiktokHandle": "wakawithus",
+    "instagram": "#",
+    "facebook": "#"
+  },
+  "hero": {
+    "pill": "2 trips open · Le Point Maka 20 June & Kribi 16–19 July",
+    "headlineLead": "Rediscover Cameroon,",
+    "headlineAccent": "one Waka",
+    "headlineEnd": "at a time.",
+    "subtitle": "Small-group journeys to the coastlines, rainforests, highlands and summits most travellers never see — led by locals who call them home.",
+    "primaryCta": "Explore journeys",
+    "secondaryCta": "Talk to a guide",
+    "stats": [
+      {
+        "end": 500,
+        "suffix": "+",
+        "decimals": 0,
+        "label": "Travellers hosted"
+      },
+      {
+        "end": 12,
+        "suffix": "",
+        "decimals": 0,
+        "label": "Trips organised"
+      },
+      {
+        "end": 4.9,
+        "suffix": "★",
+        "decimals": 1,
+        "label": "Average rating"
+      },
+      {
+        "end": 10,
+        "suffix": "",
+        "decimals": 0,
+        "label": "Regions explored"
+      }
+    ]
+  },
+  "intro": {
+    "eyebrow": "Why WakaWithUS",
+    "heading": "\"Waka\" means to walk, to go, to set off. We turn the most beautiful corners of Cameroon into journeys you'll never forget — without the stress of planning them yourself.",
+    "body": "From the black-sand beaches of Kribi to the summit of Mount Cameroon, we handle the logistics, the guides and the details — so all you carry is your camera and your sense of wonder.",
+    "image": "/images/photos/ceo.jpeg",
+    "quote": "We don't show you Cameroon. We introduce you to it."
+  },
+  "marquee": [
+    "Kribi",
+    "Mount Cameroon",
+    "Bafoussam",
+    "Korup Rainforest",
+    "Limbe",
+    "Foumban",
+    "Lobé Falls",
+    "Rhumsiki",
+    "Dja Reserve",
+    "Bamenda"
+  ],
+  "why": {
+    "eyebrow": "The WakaWithUS difference",
+    "heading": "Travel that feels personal, run by people who care",
+    "body1": "WakaWithUS began in 2024, when two friends from Buea — Ekema and Onell — set off to visit the Bimbia Slave Trade Center. That one trip turned into a movement: helping people rediscover Cameroon, one Waka at a time.",
+    "body2": "We're still small, still local, and we still plan every journey like it's for a friend. You bring the curiosity — we handle everything else.",
+    "image": "/images/photos/safari.jpg",
+    "features": [
+      {
+        "title": "Local expert guides",
+        "text": "Every journey is led by Cameroonians who grew up on these trails and speak the local languages."
+      },
+      {
+        "title": "All-inclusive, no surprises",
+        "text": "Transport, lodging, meals and entry fees are bundled into one clear price. No hidden costs."
+      },
+      {
+        "title": "Small groups only",
+        "text": "We cap every trip so you get real connection, flexibility and access — never a tourist convoy."
+      },
+      {
+        "title": "Safe & fully supported",
+        "text": "Risk-assessed routes, insured transport and 24/7 support before, during and after your trip."
+      }
+    ]
+  },
+  "howItWorks": {
+    "eyebrow": "How it works",
+    "heading": "From first click to first adventure",
+    "body": "Booking with us takes minutes, not days. No endless email chains — just a quick chat and you're on your way.",
+    "image": "/images/photos/tumz.jpeg",
+    "steps": [
+      {
+        "n": "01",
+        "title": "Browse",
+        "text": "Explore our upcoming journeys and find the one that calls to you."
+      },
+      {
+        "n": "02",
+        "title": "Reach out",
+        "text": "Message us on WhatsApp or the contact form — we reply within hours."
+      },
+      {
+        "n": "03",
+        "title": "Reserve",
+        "text": "Secure your place with a simple deposit and get your full itinerary."
+      },
+      {
+        "n": "04",
+        "title": "Waka!",
+        "text": "Show up with your camera. We take care of every other detail."
+      }
+    ]
+  },
+  "destinations": {
+    "eyebrow": "Where you'll go",
+    "heading": "Four worlds, one country",
+    "note": "Cameroon is called \"Africa in miniature\" for a reason. Hover a region to look closer.",
+    "regions": [
+      {
+        "name": "The Coast",
+        "image": "/images/photos/coast-kribi.jpg",
+        "places": "Kribi · Limbe · Lobé Falls",
+        "blurb": "Black-sand beaches where waterfalls pour into the Atlantic.",
+        "trips": 12
+      },
+      {
+        "name": "The Highlands",
+        "image": "/images/photos/highlands.jpg",
+        "places": "Bafoussam · Bamenda · Foumban",
+        "blurb": "Cool air, ancient kingdoms and endless rolling green.",
+        "trips": 9
+      },
+      {
+        "name": "The Rainforest",
+        "image": "/images/photos/rainforest.jpg",
+        "places": "Korup · Dja · Campo Ma'an",
+        "blurb": "Hundred-million-year-old canopy, gorillas and forest elephants.",
+        "trips": 7
+      },
+      {
+        "name": "The Summits",
+        "image": "/images/photos/summit-freedom.jpg",
+        "places": "Mount Cameroon · Mandara Hills",
+        "blurb": "West Africa's highest peak — 4,095m of raw volcanic power.",
+        "trips": 5
+      }
+    ]
+  },
+  "trips": [
+    {
+      "title": "Le Point Maka — The Forgotten Land",
+      "destination": "Le Point Maka",
+      "region": "History & Nature · Mini Trip",
+      "flyer": "/images/photos/maka.jpeg",
+      "dateRange": "20 June 2026",
+      "duration": "1-Day Mini Trip",
+      "price": "25,000",
+      "status": "UPCOMING",
+      "maxPax": 15,
+      "spotsLeft": 9,
+      "departureTime": "Early morning",
+      "meetingPoint": "Buea — exact point shared on booking",
+      "dressCode": "Comfortable wear & good walking shoes",
+      "inclusions": [
+        "Transportation",
+        "Touring & activities",
+        "Dinner",
+        "Roasted corn",
+        "Rooftop cinema",
+        "Good vibes & memories"
+      ],
+      "activities": [
+        "Tour the abandoned Maka site",
+        "Stream swimming & roasted corn",
+        "Group dinner",
+        "Rooftop cinema night"
+      ],
+      "highlight": "Step into history at the abandoned Maka site — the forgotten land",
+      "description": "A one-day mini adventure into history and nature. Tour the abandoned Maka site, cool off with a stream swim and roasted corn, share a group dinner, then end the day with a cinema night on a rooftop. Limited to 15 adventurers — all costs included.",
+      "itinerary": [
+        {
+          "day": "Mini Trip",
+          "date": "Sat 20 June",
+          "title": "One day, countless stories",
+          "schedule": [
+            {
+              "time": "7:00 AM",
+              "activity": "Departure from Buea"
+            },
+            {
+              "time": "10:00 AM",
+              "activity": "Touring the abandoned Maka site"
+            },
+            {
+              "time": "12:30 PM",
+              "activity": "Stream swimming & roasted corn"
+            },
+            {
+              "time": "3:00 PM",
+              "activity": "Free time — nature & photos"
+            },
+            {
+              "time": "6:00 PM",
+              "activity": "Group dinner"
+            },
+            {
+              "time": "8:00 PM",
+              "activity": "Cinema night on a rooftop"
+            },
+            {
+              "time": "10:30 PM",
+              "activity": "Return journey"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kribi — A Coastal Escape",
+      "destination": "Kribi",
+      "region": "South Coast",
+      "flyer": "/images/photos/kribtrip.jpeg",
+      "dateRange": "16–19 July 2026",
+      "duration": "4 Days / 3 Nights",
+      "price": "75,000",
+      "status": "UPCOMING",
+      "maxPax": 25,
+      "spotsLeft": 14,
+      "departureTime": "5:30 AM",
+      "meetingPoint": "Mile 17, Buea & Transcam, Douala",
+      "dressCode": "Simple African wear for the barbecue (e.g. Ankara)",
+      "inclusions": [
+        "Lodging in a 4-star guest house",
+        "Transportation",
+        "Professional pictures & drone videos"
+      ],
+      "activities": [
+        "Visit a Pygmy Village",
+        "Mbombo Beach",
+        "Lobé Waterfall",
+        "Lobé Beach",
+        "Boat rides",
+        "Canoe rides",
+        "Cocktail pool party",
+        "Barbecue party"
+      ],
+      "highlight": "Black-sand beaches where the Lobé Falls pour straight into the Atlantic",
+      "description": "Four sun-soaked days on Cameroon's most beautiful coastline — the rare Lobé waterfalls that fall into the sea, a Pygmy village, boat and canoe rides, a cocktail pool party and a barbecue night. Lodging, transport and a pro photo & drone team all included.",
+      "itinerary": [
+        {
+          "day": "Day 1",
+          "date": "Wed 16 July",
+          "title": "Departure & arrival",
+          "schedule": [
+            {
+              "time": "5:30 AM",
+              "activity": "Departure — Mile 17 Buea & Transcam Douala"
+            },
+            {
+              "time": "12:30 PM",
+              "activity": "Arrival in Kribi & check-in (4-star guest house)"
+            },
+            {
+              "time": "1:30 PM",
+              "activity": "Lunch"
+            },
+            {
+              "time": "4:00 PM",
+              "activity": "Relax at Lobé Beach"
+            },
+            {
+              "time": "7:30 PM",
+              "activity": "Welcome dinner"
+            }
+          ]
+        },
+        {
+          "day": "Day 2",
+          "date": "Thu 17 July",
+          "title": "Waterfalls & water",
+          "schedule": [
+            {
+              "time": "8:00 AM",
+              "activity": "Breakfast"
+            },
+            {
+              "time": "9:30 AM",
+              "activity": "Lobé Waterfall — the falls that meet the sea"
+            },
+            {
+              "time": "11:30 AM",
+              "activity": "Boat & canoe rides along the coast"
+            },
+            {
+              "time": "1:30 PM",
+              "activity": "Seafood lunch"
+            },
+            {
+              "time": "4:00 PM",
+              "activity": "Mbombo Beach"
+            },
+            {
+              "time": "8:00 PM",
+              "activity": "Cocktail pool party"
+            }
+          ]
+        },
+        {
+          "day": "Day 3",
+          "date": "Fri 18 July",
+          "title": "Culture & barbecue",
+          "schedule": [
+            {
+              "time": "8:00 AM",
+              "activity": "Breakfast"
+            },
+            {
+              "time": "10:00 AM",
+              "activity": "Visit a Pygmy Village"
+            },
+            {
+              "time": "1:30 PM",
+              "activity": "Lunch"
+            },
+            {
+              "time": "4:00 PM",
+              "activity": "Free time / beach & photos"
+            },
+            {
+              "time": "7:00 PM",
+              "activity": "Barbecue party — African wear (Ankara)"
+            }
+          ]
+        },
+        {
+          "day": "Day 4",
+          "date": "Sat 19 July",
+          "title": "Last swim & return",
+          "schedule": [
+            {
+              "time": "8:30 AM",
+              "activity": "Breakfast"
+            },
+            {
+              "time": "10:00 AM",
+              "activity": "Final beach time, drone & group photos"
+            },
+            {
+              "time": "12:00 PM",
+              "activity": "Check-out & return journey"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "services": [
+    {
+      "title": "General Trips",
+      "tag": "Most popular",
+      "text": "Scheduled small-group journeys across Cameroon's coast, highlands and forests. All-inclusive, social and completely stress-free — just show up and explore."
+    },
+    {
+      "title": "Private Trip",
+      "tag": "",
+      "text": "A bespoke journey built entirely around you — your dates, your pace, your people. Perfect for couples, families and groups who want it their way."
+    },
+    {
+      "title": "Trip Consultation",
+      "tag": "",
+      "text": "Planning your own adventure? Book a session and tap our local knowledge — routes, budgets, safety and the logistics most travellers miss."
+    },
+    {
+      "title": "Trip Negotiation",
+      "tag": "",
+      "text": "We use our local relationships to negotiate hotels, transport and activities on your behalf — so you always pay fair, local prices, never the tourist markup."
+    },
+    {
+      "title": "Fitness & Networking",
+      "tag": "",
+      "text": "Hikes, beach workouts and outdoor meet-ups that keep you active while you build real connections with like-minded explorers."
+    },
+    {
+      "title": "Nightlife Adventure",
+      "tag": "",
+      "text": "Guided nights out — the best bars, live music and street food, with the right crowd and a local who keeps the whole evening safe and smooth."
+    }
+  ],
+  "about": {
+    "heading": "We are the Walkers",
+    "storyHeading": "It started with one trip in 2024",
+    "story": [
+      "In 2024, two friends from Buea — Ekema and Onell — set off to visit the Bimbia Slave Trade Center. What began as a simple day out became something bigger.",
+      "Standing in that historic place, they realised how much of Cameroon's beauty and history sits right on our doorstep — unseen by the very people who live closest to it.",
+      "So they started walking. \"Waka\" — to go, to move, to explore. They invited friends, then friends of friends, and WakaWithUS grew into a community helping people rediscover Cameroon, one Waka at a time."
+    ],
+    "image": "/images/photos/ceo.jpeg",
+    "founders": [
+      {
+        "initial": "E",
+        "name": "Ekema",
+        "role": "CEO & Co-founder",
+        "bio": "A Buea local with a love for the road and a gift for bringing people together."
+      },
+      {
+        "initial": "O",
+        "name": "Onell",
+        "role": "Co-founder",
+        "bio": "The planner of the pair — turning spontaneous ideas into journeys that actually work."
+      }
+    ],
+    "timeline": [
+      {
+        "year": "2024",
+        "title": "The first Waka",
+        "desc": "Ekema and Onell leave Buea for the Bimbia Slave Trade Center — the trip that started it all."
+      },
+      {
+        "year": "2024",
+        "title": "Friends join in",
+        "desc": "Word spreads. Weekend trips with friends quickly turn into organised group journeys."
+      },
+      {
+        "year": "2025",
+        "title": "A growing community",
+        "desc": "More walkers, more destinations across the South West and beyond."
+      },
+      {
+        "year": "2026",
+        "title": "WakaWithUS today",
+        "desc": "A fresh brand, a new home online, and our upcoming trips this June and July."
+      }
+    ],
+    "values": [
+      {
+        "title": "Authenticity",
+        "desc": "Real places, real people, real Cameroon — never a manufactured tourist trap."
+      },
+      {
+        "title": "Community",
+        "desc": "Every trip is built on friendship. You arrive as a guest and leave as family."
+      },
+      {
+        "title": "Safety first",
+        "desc": "Risk-assessed routes, trusted transport and someone with you the whole way."
+      },
+      {
+        "title": "Local always",
+        "desc": "We hire local, buy local and travel light — leaving each place better than we found it."
+      }
+    ]
+  },
+  "testimonials": [
+    {
+      "name": "Amara Nkeng",
+      "trip": "Kribi Beach Escape",
+      "rating": 5,
+      "review": "Absolutely breathtaking! WakaWithUS made every detail seamless — from the transport to the beachside dinners. Kribi is magical and this team made it even more so.",
+      "date": "March 2026",
+      "initials": "AN",
+      "location": "Yaoundé, Cameroon"
+    },
+    {
+      "name": "Jean-Baptiste Fouda",
+      "trip": "Bafoussam Cultural Immersion",
+      "rating": 5,
+      "review": "As a Cameroonian living in France, this trip reconnected me with my roots in the most profound way. The cultural visits, the food, the people — I came back a different person.",
+      "date": "February 2026",
+      "initials": "JF",
+      "location": "Paris, France"
+    },
+    {
+      "name": "Sophie Laurent",
+      "trip": "Mount Cameroon Trek",
+      "rating": 5,
+      "review": "I've trekked in the Alps and the Himalayas, but something about Mount Cameroon was different. Raw, powerful, humbling. The WakaWithUS guides were exceptional.",
+      "date": "January 2026",
+      "initials": "SL",
+      "location": "Lyon, France"
+    },
+    {
+      "name": "Nsimba Patrice",
+      "trip": "Limbe Wildlife & Beach",
+      "rating": 5,
+      "review": "Perfectly organised, no stress, just pure joy. Already booked my next trip!",
+      "date": "December 2025",
+      "initials": "NP",
+      "location": "Douala, Cameroon"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Who are your trips for?",
+      "a": "Everyone — solo travellers, couples, families and groups of friends. Most of our walkers are Cameroonians rediscovering their own country, plus a growing community of visitors from abroad. Our small-group format means you'll always feel welcome."
+    },
+    {
+      "q": "What's included in the price?",
+      "a": "Transport, accommodation, meals, entry fees and your local guide are all bundled into one clear price. The only things you'll spend extra on are souvenirs and personal items. No hidden costs, ever."
+    },
+    {
+      "q": "How do I book and pay?",
+      "a": "Message us on WhatsApp or via the contact form. We'll confirm availability, send your full itinerary, and secure your spot with a deposit. The balance is due before departure — we'll guide you through every step."
+    },
+    {
+      "q": "Are your trips safe?",
+      "a": "Safety is our first priority. Every route is risk-assessed, our transport is insured, our guides are trained, and we provide 24/7 support before, during and after your journey."
+    },
+    {
+      "q": "Can you organise private or corporate trips?",
+      "a": "Absolutely. Alongside our scheduled group departures, we craft bespoke private journeys and corporate retreats. Tell us your dates, group size and dream destinations and we'll build the perfect package."
+    }
+  ]
+}

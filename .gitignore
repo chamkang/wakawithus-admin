@@ -1,0 +1,7 @@
+node_modules/
+backups/
+cookies.txt
+# NEVER commit secrets — this file holds your Supabase service key
+start-live.ps1
+.env
+.env*.local

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WakaWithUs · Content Studio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: "class", theme: { extend: { colors: {
+      bg: "#100d09", surface: "#1b1610", surface2: "#15110c", line: "#342a1e",
+      ink: "#f3ede4", muted: "#9c8e7b", forest: "#6BA644", forestdk: "#588a36",
+      clay: "#C2723A", gold: "#E0A93C"
+    }, fontFamily: { display: ['"Playfair Display"', "Georgia", "serif"] } } } };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: "Inter", ui-sans-serif, system-ui, sans-serif; }
+    .field-label { font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: #9c8e7b; font-weight: 600; }
+    /* All form controls dark by default */
+    input, textarea, select {
+      background-color: #15110c; color: #f3ede4; border: 1px solid #342a1e;
+      border-radius: 10px; padding: 10px 12px; width: 100%; outline: none;
+      transition: border-color .15s, box-shadow .15s; font-size: 14px;
+    }
+    input:focus, textarea:focus, select:focus { border-color: #6BA644; box-shadow: 0 0 0 3px rgba(107,166,68,.18); }
+    textarea { resize: vertical; line-height: 1.5; }
+    input[type=file] { display: none; }
+    ::placeholder { color: #6f6353; }
+    ::-webkit-scrollbar { width: 10px; height: 10px; }
+    ::-webkit-scrollbar-thumb { background: #342a1e; border-radius: 8px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    .sidebar-link.active { background: rgba(107,166,68,.14); color: #fff; box-shadow: inset 3px 0 0 #6BA644; }
+  </style>
+</head>
+<body class="bg-bg text-ink min-h-screen">
+
+  <!-- Login -->
+  <div id="login" class="fixed inset-0 z-50 flex items-center justify-center bg-bg hidden px-4">
+    <form id="loginForm" class="bg-surface rounded-2xl p-8 w-full max-w-sm border border-line shadow-2xl">
+      <div class="flex items-center gap-3 mb-7">
+        <img src="/site/images/logo-mark.png" onerror="this.style.display='none'" class="w-11 h-11" />
+        <div>
+          <h1 class="font-display text-xl leading-none">WakaWith<span class="text-clay">Us</span></h1>
+          <p class="text-xs text-muted mt-1">Content Studio</p>
+        </div>
+      </div>
+      <label class="field-label block mb-2">Password</label>
+      <input id="password" type="password" placeholder="Enter admin password" class="mb-4" />
+      <button class="w-full bg-forest text-white font-semibold py-3 rounded-xl hover:bg-forestdk transition-colors">Log in</button>
+      <p id="loginError" class="text-red-400 text-sm mt-3 hidden"></p>
+    </form>
+  </div>
+
+  <!-- App -->
+  <div id="app" class="hidden">
+    <!-- Top bar -->
+    <header class="sticky top-0 z-30 bg-surface/90 backdrop-blur border-b border-line">
+      <div class="max-w-screen-2xl mx-auto px-4 lg:px-6 h-16 flex items-center justify-between gap-4">
+        <div class="flex items-center gap-3">
+          <img src="/site/images/logo-mark.png" onerror="this.style.display='none'" class="w-9 h-9" />
+          <div>
+            <p class="font-display text-lg leading-none">WakaWith<span class="text-clay">Us</span></p>
+            <p class="text-[11px] text-muted">Content Studio</p>
+          </div>
+          <span id="modeBadge" class="ml-2 hidden sm:inline-flex items-center gap-1.5 text-[11px] font-semibold px-2.5 py-1 rounded-full"></span>
+        </div>
+        <div class="flex items-center gap-2">
+          <span id="status" class="hidden md:block text-sm text-muted mr-1"></span>
+          <button id="reloadBtn" class="text-sm px-3 py-2 rounded-lg border border-line text-muted hover:text-ink hover:border-muted transition-colors">Reload</button>
+          <button id="saveBtn" class="text-sm px-5 py-2 rounded-lg bg-forest text-white font-semibold hover:bg-forestdk transition-colors flex items-center gap-2">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><path d="M17 21v-8H7v8M7 3v5h8"/></svg>
+            <span id="saveLabel">Publish</span>
+          </button>
+          <button id="logoutBtn" class="text-sm px-3 py-2 rounded-lg border border-line text-muted hover:text-ink hover:border-muted transition-colors">Log out</button>
+        </div>
+      </div>
+    </header>
+
+    <div class="max-w-screen-2xl mx-auto px-4 lg:px-6 py-6 grid grid-cols-12 gap-6">
+      <!-- Sidebar -->
+      <aside class="col-span-12 lg:col-span-3 xl:col-span-2">
+        <p class="field-label mb-3 hidden lg:block">Sections</p>
+        <nav id="sections" class="flex lg:flex-col gap-1 overflow-x-auto lg:overflow-visible lg:sticky lg:top-24 pb-2"></nav>
+      </aside>
+      <!-- Editor -->
+      <main class="col-span-12 lg:col-span-9 xl:col-span-10">
+        <div id="editor" class="max-w-3xl"></div>
+      </main>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 text-white px-5 py-3 rounded-full text-sm shadow-2xl opacity-0 transition-opacity pointer-events-none z-50" style="background:#1b1610;border:1px solid #342a1e"></div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
