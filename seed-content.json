@@ -520,5 +520,51 @@
       "q": "Can you organise private or corporate trips?",
       "a": "Absolutely. Alongside our scheduled group departures, we craft bespoke private journeys and corporate retreats. Tell us your dates, group size and dream destinations and we'll build the perfect package."
     }
+  ],
+  "blog": [
+    {
+      "slug": "buea-to-bimbia",
+      "title": "Buea to Bimbia: the trip that started it all",
+      "date": "2024-08-15",
+      "author": "Ekema",
+      "tag": "Our story",
+      "excerpt": "How a spontaneous day trip from Buea to the Bimbia Slave Trade Center turned into WakaWithUs.",
+      "coverImage": "/images/photos/rainforest.jpg",
+      "sections": [
+        { "heading": "", "text": "It started with a simple idea: let's go see something close to home. Write your opening here — set the scene, the morning you left Buea, who came along.", "image": "" },
+        { "heading": "The road there", "text": "Describe the journey — the drive, the conversations, the first glimpse of the coast. Add a photo from the road below.", "image": "/images/photos/ceo.jpeg" },
+        { "heading": "Standing in history", "text": "Write about arriving at the Bimbia Slave Trade Center — what you saw, how it felt, what it made you realise about Cameroon's story.", "image": "" },
+        { "heading": "Why we started WakaWithUs", "text": "Close with the takeaway: the moment you decided more people needed to rediscover Cameroon, one Waka at a time.", "image": "" }
+      ]
+    },
+    {
+      "slug": "le-point-maka-recap",
+      "title": "Le Point Maka: into the forgotten land",
+      "date": "2026-06-21",
+      "author": "Onell",
+      "tag": "Trip recap",
+      "excerpt": "Stream swims, roasted corn and a rooftop cinema night — our mini trip to the abandoned Maka site.",
+      "coverImage": "/images/photos/maka.jpeg",
+      "sections": [
+        { "heading": "", "text": "Recap the day here — the early start, the energy in the bus, who joined the adventure.", "image": "" },
+        { "heading": "Touring the abandoned site", "text": "Describe exploring Le Point Maka — the history, the eerie quiet, the photos everyone took.", "image": "/images/photos/rainforest.jpg" },
+        { "heading": "Stream swim & roasted corn", "text": "Write about the swim, the food, the laughs. Drop a favourite photo here.", "image": "" },
+        { "heading": "Cinema under the stars", "text": "Wrap up with the rooftop cinema night and the ride home.", "image": "" }
+      ]
+    },
+    {
+      "slug": "kribi-weekend",
+      "title": "A weekend in Kribi",
+      "date": "2026-03-10",
+      "author": "Ekema",
+      "tag": "Trip recap",
+      "excerpt": "Black-sand beaches, the Lobé waterfalls that pour into the sea, and a barbecue to remember.",
+      "coverImage": "/images/photos/coast-kribi.jpg",
+      "sections": [
+        { "heading": "", "text": "Set the scene for the Kribi weekend — placeholder text you can replace with your own story.", "image": "" },
+        { "heading": "Where the falls meet the sea", "text": "Write about visiting the Lobé Falls and the boat ride. Add a photo below.", "image": "/images/photos/waterfall.jpg" },
+        { "heading": "Beach days & barbecue night", "text": "Describe the beach, the food, the people, the vibes.", "image": "" }
+      ]
+    }
   ]
 }
